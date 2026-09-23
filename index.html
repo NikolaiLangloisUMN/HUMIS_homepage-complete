@@ -2,52 +2,46 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <title>HUMIS homepage (completed)</title>
+    <title>HUMIS homepage (completed) mobile-only</title>
     <link rel="stylesheet" href="styles.css">
+    <meta name="viewport" content="width=device-width,initial-scale=1.0">
 </head>
 <body>
 
-<div class="container">
+<div class="container-mobile">
     <header>
-        <img src="files/historyHome.gif" alt="Header image"/>
+        <img src="files/mobile-header.gif" alt="Header image"/>
     </header>
 
-    <section class="subHeader">
-        <img src="files/histHomepic.jpg" alt="Subheader image"/>
-    </section>
-
-    <section class="middle">
+    <div class="content">
         <nav class="top-nav">
             <a href="#">Campus directory</a>
             <a href="#">Department calendar</a>
             <a href="#">Contact us</a>
             <a href="#">
-                <img src="files/u_small.gif" alt="Small U of U logo"/>
+                <img src="files/u_small.gif" alt="U of U Logo"/>
             </a>
         </nav>
 
+        <nav class="dropdown-menu">
+            <label for="page-nav">
+                <select name="page-nav" class="page-nav" id="page-nav">
+                    <option value="#">Navigate to:</option>
+                    <option value="#">About us</option>
+                    <option value="#">Faculty &amp; staff</option>
+                    <option value="#">Undergraduate students</option>
+                    <option value="#">Graduate students</option>
+                    <option value="#">Courses &amp; syllabi</option>
+                    <option value="#">News &amp; announcements</option>
+                    <option value="#">Friends &amp; alumni</option>
+                    <option value="#">Contact us</option>
+                </select>
+            </label>
+        </nav>
+
         <section class="brown-box">
-            <aside class="left-side">
-                <nav>
-                    <a href="#">About us</a>
-                    <a href="#">Faculty &amp; staff</a>
-                    <a href="#">Undergraduate students</a>
-                    <a href="#">Graduate students</a>
-                    <a href="#">Courses &amp; syllabi</a>
-                    <a href="#">News &amp; announcements</a>
-                    <a href="#">Friends &amp; alumni</a>
-                    <a href="#">Contact us</a>
-                </nav>
-
-                <div>
-                    <img src="files/login-humis.gif" alt="HUMIS login"/>
-                    <img src="files/login-cis.gif" alt="CIS login"/>
-                </div>
-
-            </aside>
-
-            <aside class="right-side">
-                <img src="files/women_w_pottery.jpg" alt="Women with pottery"/>
+            <main>
+                <img src="files/women_w_pottery.jpg" alt="Women W Pottery"/>
 
                 <h1>News &amp; announcements</h1>
 
@@ -58,24 +52,18 @@
                     inibh erci tie conulla feummod dolor aut accumsan vel esequisi bla adio odolorting erosto
                     cor iriustie commod minciliquate tatum vero odipit, vulla feuisis molore tat, sim dit alis
                 </p>
-
-                <p class="learn-more">
-                    <a href="#">>> MORE NEWS & ANNOUNCEMENTS</a>
-                </p>
-            </aside>
-
-            <div style="clear: both;"></div>
+            </main>
         </section>
-
-        <nav class="bottom-nav">
-            <a href="#">disclaimer</a>
-            <a href="#">text only</a>
-            <a href="#">webmaster</a>
-        </nav>
-    </section>
+    </div>
 
     <footer>
-        380 SOUTH 1400 EAST | 211 C HALL | SALT LAKE CIT Y | UT | 84112 | PHONE 801.581.6121 | FAX 801.585.0580
+        <span>380 SOUTH 1400 EAST</span>
+        <span>211 C HALL</span>
+        <span>SALT LAKE CITY</span>
+        <span>UT</span>
+        <span>84112</span>
+        <span>PHONE 801.581.6121</span>
+        <span>FAX 801.585.0580</span>
     </footer>
 </div>
 
