@@ -14,7 +14,10 @@ body {
         }
 
         div.content {
-            padding: 5px;
+            padding: 10px;
+            background-image: url('files/uofu_medallion_rt.gif');
+            background-repeat: no-repeat;
+            background-position: bottom right;
 
             nav.top-nav {
                 font-size: 10px;
@@ -60,7 +63,7 @@ body {
                 background-color: #C8CAAF;
                 border-radius: 10px;
                 padding: 10px;
-                margin: 5px 0;
+                margin: 5px 0 70px;
 
                 main {
                     background-color: white;
@@ -83,6 +86,10 @@ body {
 
                         span {
                             font-weight: bold;
+                        }
+
+                        &:last-of-type {
+                            margin-bottom: 0;
                         }
                     }
                 }
