@@ -19,11 +19,9 @@ body {
             background-repeat: no-repeat;
             background-position: bottom right;
 
-            nav.top-nav {
+            > nav {
                 font-size: 10px;
                 text-align: center;
-                text-transform: uppercase;
-                margin-bottom: 4px;
 
                 a {
                     color: black;
@@ -42,6 +40,15 @@ body {
                     &:last-of-type {
                         border: none;
                     }
+                }
+
+                &.top-nav {
+                    text-transform: uppercase;
+                    margin: 0 0 10px;
+                }
+
+                &.bottom-nav {
+                    text-transform: lowercase;
                 }
             }
 
