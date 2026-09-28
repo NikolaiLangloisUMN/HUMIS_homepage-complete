@@ -4,13 +4,22 @@ body {
     margin: 0;
 
     div.container-mobile {
-        width: 390px;
+        min-width: 390px;
+        max-width: 780px;
         margin: 0 auto;
         background-color: white;
 
         header {
             border-bottom: 9px solid #BB271A;
             background-color: #616643;
+
+            img {
+                width: 100%;
+
+                &.desktop {
+                    display: none;
+                }
+            }
         }
 
         div.content {
@@ -72,6 +81,10 @@ body {
                 padding: 10px;
                 margin: 5px 0 70px;
 
+                aside.left-side {
+                    display: none;
+                }
+
                 main {
                     background-color: white;
                     padding: 10px;
@@ -101,26 +114,94 @@ body {
                     }
                 }
             }
+
+            div.links {
+                text-align: center;
+                margin: 10px 0 0;
+            }
         }
-    }
 
-    footer {
-        background-color: #676E3D;
-        color: #fff;
-        padding: 6px;
-        font-size: 12px;
-        text-align: center;
+        footer {
+            background-color: #676E3D;
+            color: #fff;
+            padding: 6px;
+            font-size: 11px;
+            text-align: center;
 
-        span {
-            border-right: 1px solid white;
-            display: inline-block;
-            padding-right: 5px;
-            padding-left: 3px;
-            margin: 3px 0;
+            span {
+                border-right: 1px solid white;
+                display: inline-block;
+                padding-right: 5px;
+                padding-left: 3px;
+                margin: 3px 0;
 
-            &:last-of-type {
-                border: none;
+                &:last-of-type {
+                    border: none;
+                }
+            }
+        }
+
+        /* styles here saying how things should change as viewport > 600px */
+        @media screen and (width > 600px) {
+            header {
+                img {
+                    &.mobile {
+                        display: none;
+                    }
+
+                    &.desktop {
+                        display: block;
+                    }
+                }
+            }
+
+            div.content {
+                > nav.top-nav,
+                > nav.bottom-nav {
+                    text-align: right;
+                }
+
+                > nav.dropdown-menu {
+                    display: none;
+                }
+
+                section.brown-box {
+                    aside.left-side {
+                        display: block;
+                        float: left;
+                        width: 30%;
+
+                        nav {
+                            margin-bottom: 20px;
+
+                            a {
+                                display: block;
+                                color: black;
+                                text-decoration: none;
+                                border-bottom: 2px solid #505A2F;
+                                text-transform: uppercase;
+                                padding: 10px 0 10px 10px;
+                                font-size: 10px;
+
+                                &:hover {
+                                    background-color: #505A2F;
+                                    color: white;
+                                }
+                            }
+                        }
+                    }
+
+                    main {
+                        float: right;
+                        width: 63%;
+                    }
+
+                    div.clear-floats {
+                        clear: both;
+                    }
+                }
             }
         }
     }
+
 }
