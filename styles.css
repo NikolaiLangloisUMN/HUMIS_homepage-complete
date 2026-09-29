@@ -42,6 +42,7 @@ body {
                         vertical-align: middle;
                     }
 
+                    &:hover,
                     &:active {
                         text-decoration: underline;
                     }
@@ -117,7 +118,8 @@ body {
 
             div.links {
                 text-align: center;
-                margin: 10px 0 0;
+                width: 250px;
+                margin: 20px 0 0;
             }
         }
 
@@ -166,6 +168,8 @@ body {
                 }
 
                 section.brown-box {
+                    padding: 20px;
+
                     aside.left-side {
                         display: block;
                         float: left;
